@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+
+body{
+  height: 320vh;
+
+  color: white;
+  font-family: 'outfit';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.card-spotlight {
+  width: 30%;
+  height: 40%;
+  position: relative;
+  border-radius: 1.5rem;
+  background-color: rgb(54, 54, 58) ;
+  box-shadow: inset 0px 0px 15px black;
+  padding: 2rem;
+  overflow: hidden;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: rgb(255, 0, 0);
+}
+.card-spotlight2 {
+  width: 80%;
+  height: 30%;
+  position: relative;
+  border-radius: 1.5rem;
+  background-color: rgba(253, 252, 252, 0.534) ;
+  box-shadow: inset 0px 0px 15px black;
+  padding: 2rem;
+  overflow: hidden;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: rgb(255, 0, 0);
+}
+
+.card-spotlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 80%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.card-spotlight:hover::before,
+.card-spotlight:focus-within::before {
+  opacity: 0.6;
+}
+.card-spotlight img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.list {
+  list-style-type: none;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.underbar {
+  width: 0;
+  height: 5px;
+  background: rgba(100, 100, 200, 0);
+  top: 20px;
+  position: absolute;
+  transition: 0.5s ease;
+}
+
+.infoList {
+  width: 50px;
+  float: left;
+  transition: 0.5s ease;
+}
+
+.infoList:hover {
+  text-shadow: 0px -2px 0px rgba(0, 0, 0, 1),
+               0 0 5px rgba(255, 255, 255, 0.8),
+               0 -4px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Quand on survole un élément, on déplace la barre */
+.infoList:nth-of-type(1):hover ~ .underbar,
+.infoList:nth-of-type(2):hover ~ .underbar,
+.infoList:nth-of-type(3):hover ~ .underbar {
+  left: 100px;
+  width: 40px;
+  height: 1px;
+  background: rgba(150, 250, 250, 0.5);
+  box-shadow: 0 0 10px rgba(70, 250, 250, 1);
+}
+
+/*scroll barre technos left to right*/
+.logoloop {
+  position: relative;
+  overflow-x: hidden;
+
+  --logoloop-gap: 32px;
+  --logoloop-logoHeight: 28px;
+  --logoloop-fadeColorAuto: #ffffff;
+}
+
+.logoloop--scale-hover {
+  padding-top: calc(var(--logoloop-logoHeight) * 0.1);
+  padding-bottom: calc(var(--logoloop-logoHeight) * 0.1);
+}
+
+.logoloop__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  user-select: none;
+}
+
+.logoloop__list {
+  display: flex;
+  align-items: center;
+}
+
+.logoloop__item {
+  flex: 0 0 auto;
+  margin-right: var(--logoloop-gap);
+  font-size: var(--logoloop-logoHeight);
+  line-height: 1;
+}
+
+.logoloop__item:last-child {
+  margin-right: var(--logoloop-gap);
+}
+
+.logoloop__node {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logoloop__item img {
+  height: var(--logoloop-logoHeight);
+  width: auto;
+  display: block;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  /* Links handle interaction */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoloop--scale-hover .logoloop__item {
+  overflow: visible;
+}
+
+.logoloop--scale-hover .logoloop__item:hover img,
+.logoloop--scale-hover .logoloop__item:hover .logoloop__node {
+  transform: scale(1.2);
+  transform-origin: center center;
+}
+
+.logoloop--scale-hover .logoloop__node {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoloop__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.logoloop__link:hover {
+  opacity: 0.8;
+}
+
+.logoloop__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.logoloop--fade::before,
+.logoloop--fade::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(24px, 8%, 120px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .logoloop__track {
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .logoloop__item img,
+  .logoloop__node {
+    transition: none !important;
+  }
+}
