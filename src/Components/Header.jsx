@@ -35,7 +35,7 @@ export default function Header() {
                 </ul>
             </nav>
             <div className='flex items-start fixed top-25 left-25 z-50'>
-                <Link to="home"><img className="cursor-pointer" src="fusée.webp" width={40}/></Link>
+                <Link to="home"><img className="cursor-pointer" src="fusee.png" width={80}/></Link>
                 </div>
         </div>
     </>

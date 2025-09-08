@@ -8,10 +8,10 @@ export default function Projects() {
 
   return (
 <>
-    <div id="projects" className='h-[80vh] bg-zinc-800'>
+    <div id="projects" className='h-[120vh] md:h-[80vh] bg-zinc-800'>
         <h1 className='text-4xl text-center pt-10'>Mes projets</h1>
             <div className='flex justify-center pt-3'><hr className='w-30 '/></div>
-            <div className='flex justify-center gap-30 pt-30'>
+            <div className='flex flex-col items-center justify-center md:flex-row md:justify-center gap-30 pt-30'>
                 <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(255, 255, 255, 0.4)">
                     <h5 className="mb-2 text-2xl font-bold  text-white underline underline-offset-4">Site de demande de prestation</h5>
                     <img src="/site_devis.jpg"></img>
