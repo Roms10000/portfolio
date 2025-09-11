@@ -11,8 +11,8 @@ return (
         <p className='text-4xl'>Contact</p>
         <hr className='w-20'/>
     </div>
-        <p className='text-white md:ml-0 ml-10 mt-10'>N'hésitez pas à me contacter je prendrais toujours le temps de vous répondre peu importe le sujet !</p>
-    <div className='flex flex-col md:flex-row gap-10 md:gap-50 mt-20'>
+        <p className='text-white lg:ml-0 ml-10 mt-10'>N'hésitez pas à me contacter je prendrais toujours le temps de vous répondre peu importe le sujet !</p>
+    <div className='flex flex-col xxl:flex-row gap-10 xxl:gap-50 mt-20'>
         <div className='flex flex-col items-center'>
             <p className='mb-2 text-xl '>Adresse:</p>
             <p className='text-white '>10000 Troyes</p>
@@ -21,7 +21,7 @@ return (
             <p className='mb-2 text-xl'>Email:</p>
             <a href="mailto:roms.10@outlook.fr" className='text-white mb-2'>roms.10@outlook.fr</a>
         </div>
-        <div className='flex flex-row md:flex-col gap-5 justify-center'>
+        <div className='flex flex-row xxl:flex-col gap-5 justify-center'>
               <a 
                 href="https://www.linkedin.com/in/romain-richardon-4b8083245" 
                 target="_blank" 

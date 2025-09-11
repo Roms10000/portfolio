@@ -7,7 +7,7 @@ export default function Header() {
     <>
         <div className='h-35 bgNone'>
             <nav>
-                <ul className="gap-40 flex justify-center pt-10">
+                <ul className="gap-5 md:gap-40 flex justify-center pt-2 md:pt-5">
                     <li>
                         <Link
                         to="aboutme"
@@ -34,8 +34,8 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
-            <div className='flex items-start fixed top-25 left-25 z-50'>
-                <Link to="home"><img className="cursor-pointer" src="fusée.webp" width={80}/></Link>
+            <div className='flex items-start fixed top-30 md:top-25 md:left-5 md:z-50 lg:top-5 lg:left-5 lg:z-50 xl:top-5 xl:left-25 xl:z-50'>
+                <Link to="home"><img className="cursor-pointer" src="fusée.png" width={80}/></Link>
                 </div>
         </div>
     </>

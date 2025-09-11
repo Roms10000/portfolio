@@ -6,7 +6,7 @@ export default function Social () {
   return (
   
     <div className="flex text-3xs rotate-270 gap-3">
-      <p className="">SOCIAL -</p>
+      <p className="">SOCIAL</p>
       <ul className="flex gap-3">
     <li>
       <a 
