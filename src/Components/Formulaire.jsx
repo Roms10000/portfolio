@@ -31,21 +31,21 @@ return (
   <>
     <form class="max-w-sm mx-auto" onSubmit={handleSubmit}>
         <div class="mb-5">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Adresse e-mail</label>
+            <label for="email" class="block mb-2 text-sm font-medium text-white">Adresse e-mail</label>
             <input type="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="JohnDoe@mail.com" required />
         </div>
         <div className='flex gap-3'>
             <div class="mb-5">
-                <label for="nom" class="block mb-2 text-sm font-medium text-gray-900">Nom</label>
+                <label for="nom" class="block mb-2 text-sm font-medium text-white">Nom</label>
                 <input type="txt" name="nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="John" required />
             </div>
             <div class="mb-5">
-                <label for="prenom" class="block mb-2 text-sm font-medium text-gray-900">Prénom</label>
+                <label for="prenom" class="block mb-2 text-sm font-medium text-white">Prénom</label>
                 <input type="txt" name="prenom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Doe" required />
             </div>
         </div>
         <div class="mb-5">
-            <label for="objet" class="block mb-2 text-sm font-medium text-gray-900">Objet</label>
+            <label for="objet" class="block mb-2 text-sm font-medium text-white">Objet</label>
             <select name="objet" value={objet} onChange={(e) => setObjet(e.target.value)} required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Doe">
                 <option value="" selected disabled>Choisissez un objet --</option>
                 <option className="" value="prestation">Demande de prestations</option>
@@ -55,7 +55,7 @@ return (
             </select>
         </div>
         <div class="mb-5">
-            <label for="description" class="block mb-2 text-sm font-medium text-gray-900">Description</label>
+            <label for="description" class="block mb-2 text-sm font-medium text-white">Description</label>
             <textarea rows="5" cols="20" name="description" maxLength={maxLength} value={description} onChange={(e) => setDescription(e.target.value)} id="description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" required />
             <p className="text-sm text-gray-500 mt-1 text-right">{description.length} / {maxLength}</p>
         </div>
