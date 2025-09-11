@@ -9,11 +9,11 @@ export default function Contact () {
 
   return (
 <>
-    <div id="contact" className='h-[70vh] bg-zinc-900 grid grid-cols-6 pt-20'>
-        <div className='col-start-2 col-span-2 flex flex-col'>
+    <div id="contact" className='h-[120vh] md:h-[70vh] bg-zinc-900 grid grid-cols-6 pt-20'>
+        <div className='col-start-2 md:col-start-2 col-span-6 md:col-span-2 flex flex-col'>
             <Info />
         </div>
-        <div className='col-start-4 col-span-2'>
+        <div className='col-start-2 col-span-6 md:col-start-4 md:col-span-2'>
             <Formulaire />
         </div>
     </div>
