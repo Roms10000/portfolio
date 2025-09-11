@@ -15,18 +15,17 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="relative w-68 h-96 overflow-hidden rounded-lg">
-      {images.map((img, i) => (
-        <img
-          key={i}
-          onClick={prev}
-          src={img}
-          alt={`slide ${i}`}
-          className={`absolute w-full h-full object-cover transition-opacity duration-500 cursor-pointer ${
-            i === current ? "opacity-100" : "opacity-0"
-          }`}
-        />
+<>
+  <div className="relative w-68 h-96 overflow-hidden rounded-lg">
+    {images.map((img, i) => (
+      <img
+        key={i}
+        onClick={prev}
+        src={img}
+        alt={`slide ${i}`}
+        className={`absolute w-full h-full object-cover transition-opacity duration-500 cursor-pointer ${i === current ? "opacity-100" : "opacity-0"}`}/>
       ))}
-    </div>
+  </div>
+</>
   );
 }
