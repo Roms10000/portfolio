@@ -21,12 +21,13 @@ html {
   overflow: hidden;
   --mouse-x: 50%;
   --mouse-y: 50%;
-  --spotlight-color: rgb(255, 0, 0);
+  --spotlight-color: rgb(255, 255, 255);
 }
 
 @media (max-width: 767px) { 
   .card-spotlight {
     width: 80%;
+    height: 30%;
   }
 }
 

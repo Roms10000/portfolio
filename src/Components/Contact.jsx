@@ -13,7 +13,7 @@ export default function Contact () {
         <div className='col-start-2 md:col-start-2 col-span-6 md:col-span-2 flex flex-col'>
             <Info />
         </div>
-        <div className='col-start-2 col-span-4 md:col-start-4 md:col-span-2'>
+        <div className='col-start-2 col-span-6 md:col-start-4 md:col-span-2'>
             <Formulaire />
         </div>
     </div>
