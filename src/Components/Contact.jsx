@@ -9,11 +9,11 @@ export default function Contact () {
 
   return (
 <>
-    <div id="contact" className='min-h-[130vh] md:min-h-[70vh] lg:min-h-[50vh] xl:min-h-[50vh] bg-zinc-900 grid grid-cols-6 pt-20'>
-        <div className='col-start-2 md:col-start-2 col-span-6 md:col-span-2 flex flex-col'>
+    <div id="contact" className='min-h-[100vh] md:min-h-[70vh] lg:min-h-[50vh] xl:min-h-[50vh] bg-zinc-900 flex flex-col lg:flex-row  lg:justify-evenly pt-20'>
+        <div className='flex flex-col '>
             <Info />
         </div>
-        <div className='col-start-2 col-span-4 md:col-start-4 md:col-span-2'>
+        <div className='flex'>
             <Formulaire />
         </div>
     </div>

@@ -11,7 +11,9 @@ return (
         <p className='text-4xl'>Contact</p>
         <hr className='w-20'/>
     </div>
-        <p className='text-white lg:ml-0 ml-10 mt-10'>N'hésitez pas à me contacter je prendrais toujours le temps de vous répondre peu importe le sujet !</p>
+    <div className='flex justify-center'>
+        <p className='text-white mt-10'>N'hésitez pas à me contacter je prendrais toujours le temps de vous répondre peu importe le sujet !</p>
+    </div>
     <div className='flex flex-col xxl:flex-row gap-10 xxl:gap-50 mt-20'>
         <div className='flex flex-col items-center'>
             <p className='mb-2 text-xl '>Adresse:</p>
