@@ -27,7 +27,6 @@ html {
 @media (max-width: 767px) { 
   .card-spotlight {
     width: 80%;
-    height: 30%;
   }
 }
 

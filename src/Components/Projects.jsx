@@ -8,7 +8,7 @@ export default function Projects() {
 
   return (
 <>
-    <div id="projects" className='min-h-[100vh] md:min-h-[60vh] xl:min-h-[80vh] bg-zinc-800'>
+    <div id="projects" className='min-h-[110vh] md:min-h-[60vh] xl:min-h-[80vh] bg-zinc-800'>
         <h1 className='text-4xl text-center pt-10'>Mes projets</h1>
             <div className='flex justify-center pt-3'><hr className='w-30 '/></div>
             <div className='flex flex-col items-center justify-center md:flex-row md:justify-center gap-30 pt-30'>

@@ -18,7 +18,7 @@ export default function Aboutme() {
   ];
 
   return (
-<div id="aboutme" className="min-h-[130vh] md:min-h-[120vh] lg:min-h-[80vh] bg-zinc-900 text-white grid grid-cols-6 auto-rows-min gap-4 pt-5">
+<div id="aboutme" className="min-h-[140vh] md:min-h-[120vh] lg:min-h-[80vh] bg-zinc-900 text-white grid grid-cols-6 auto-rows-min gap-4 pt-5">
      <h1 className="text-4xl col-start-2 mt-10 col-span-6 md:col-start-3 lg:col-start-2">A propos de moi</h1>
      <hr className='col-start-2 w-30 md:col-start-3 lg:col-start-2'/>
      <div className='col-start-2 col-span-5 md:col-start-2 md:col-span-4 lg:col-span-2 lg:col-start-2 pt-8'>
