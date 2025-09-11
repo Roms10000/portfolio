@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://romain-richardon.vercel.app/sitemap.xml
