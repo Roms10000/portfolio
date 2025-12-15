@@ -28,6 +28,14 @@ export default function Projects() {
                             <a href="https://github.com/TPierre86/Projet-Calendrier-Reservation" target="_blank"  className="text-black bg-white  hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full px-5 py-2.5 me-2 mb-2 cursor-pointer"><FaGithub size={20} className="text-black cursor-pointer" /></a>
                         </div>
                 </SpotlightCard>
+                <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(255, 255, 255, 0.4)">
+                    <h5 className="mb-2 text-xl lg:text-2xl font-bold  text-white underline underline-offset-4 ">Site E-commerce Coffee Time</h5>
+                    <img src="/coffeetime.jpg"></img>
+                        <div className='flex justify-center mt-5'>
+                            <a href="/demo_coffe_time.mp4" target='_blank' className="text-black bg-white  hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 cursor-pointer"><FaVideo size={20} className="text-black cursor-pointer" /></a>
+                            <a href="https://github.com/Roms10000/back_coffee" target="_blank"  className="text-black bg-white  hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full px-5 py-2.5 me-2 mb-2 cursor-pointer"><FaGithub size={20} className="text-black cursor-pointer" /></a>
+                        </div>
+                </SpotlightCard>
             </div>
     </div>
 </>

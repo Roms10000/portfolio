@@ -23,7 +23,7 @@ export default function Aboutme() {
     <h1 className="text-4xl col-start-2 mt-10 col-span-6 md:col-start-3 lg:col-start-2">A propos de moi</h1>
     <hr className='col-start-2 w-30 md:col-start-3 lg:col-start-2'/>
     <div className='col-start-2 col-span-5 md:col-start-2 md:col-span-4 lg:col-span-2 lg:col-start-2 pt-8'>
-      <p>Je m'apelle Romain RICHARDON, j'ai 27 ans je suis developpeur web et web mobile depuis mai 2025 après 8 ans dans l'armée de Terre. Si le football et les jeux vidéo sont mes principales passions, j’aime aussi explorer et m’intéresser à de nombreux autres domaines.</p>
+      <p>Je m'apelle Romain RICHARDON, j'ai 27 ans je suis developpeur web et web mobile depuis mai 2025 après 9 ans dans l'armée de Terre. Si le football et les jeux vidéo sont mes principales passions, j’aime aussi explorer et m’intéresser à de nombreux autres domaines.</p>
       <br/>
       <p>À la recherche d'innombrables projets pour parfaire mon expérience dans le domaine.</p>
       <p className='mt-15'>Voici les différents stacks avec lesquels je suis familier :</p>
