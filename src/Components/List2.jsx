@@ -1,5 +1,5 @@
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@heroui/react";
-import {FaGithub,FaVideo} from "react-icons/fa";
+import {FaGithub} from "react-icons/fa";
 
 export default function List2() {
   return (
