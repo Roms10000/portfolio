@@ -2,7 +2,8 @@ import React from 'react'
 import {Link} from "react-router";
 import {FaGithub,FaVideo} from "react-icons/fa";
 import SpotlightCard from './SpotlightCard'
-
+import List from './List';
+import List2 from './List2';
 
 export default function Projects() {
 
@@ -17,7 +18,7 @@ export default function Projects() {
                     <img src="/site_devis.jpg"></img>
                     <div className='flex justify-center mt-5'>
                     <a href="/demo_pdev.mp4" target="_blank" className="text-black bg-white  hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 cursor-pointer"><FaVideo size={20} className="text-black cursor-pointer" /></a>
-                    <a href="https://github.com/Roms10000/front_end_website_devis" target="_blank" className="text-black bg-white hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full px-5 py-2.5 me-2 mb-2 cursor-pointer"><FaGithub size={20} className="text-black cursor-pointer" /></a>
+                    <List2 />
             </div>
                 </SpotlightCard>
                 <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(255, 255, 255, 0.4)">
@@ -33,7 +34,7 @@ export default function Projects() {
                     <img src="/coffeetime.jpg"></img>
                         <div className='flex justify-center mt-5'>
                             <a href="/demo_coffe_time.mp4" target='_blank' className="text-black bg-white  hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 cursor-pointer"><FaVideo size={20} className="text-black cursor-pointer" /></a>
-                            <a href="https://github.com/Roms10000/back_coffee" target="_blank"  className="text-black bg-white  hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full px-5 py-2.5 me-2 mb-2 cursor-pointer"><FaGithub size={20} className="text-black cursor-pointer" /></a>
+                            <List/>
                         </div>
                 </SpotlightCard>
             </div>
