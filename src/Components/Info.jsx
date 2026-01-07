@@ -1,5 +1,3 @@
-import React, {useState} from 'react';
-import SpotlightCard from './SpotlightCard'
 import { FaInstagram,FaLinkedin,FaGithub} from "react-icons/fa";
 
 export default function Info () {

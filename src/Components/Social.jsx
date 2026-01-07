@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaInstagram,FaLinkedin,FaGithub} from "react-icons/fa";
 
 export default function Social () {

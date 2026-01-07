@@ -1,7 +1,5 @@
-import React from 'react'
-import {Link} from "react-router";
 import LogoLoop from './LogoLoop';
-import { FaJs,FaCss3,FaHtml5,FaReact,FaSymfony,FaPhp, FaDocker} from "react-icons/fa";
+import { FaReact,FaSymfony,FaPhp, FaDocker} from "react-icons/fa";
 import { SiTailwindcss,SiMongodb, SiMysql } from 'react-icons/si';
 import Carousel from './Carousel';
 

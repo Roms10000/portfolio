@@ -12,13 +12,13 @@ const handleAnimationComplete = () => {
 
   return (
 <>
-  <div id="home" className="h-[100vh] bg-[url('/back.jpg')] bg-cover bg-center text-white ">
+  <div id="home" className="h-[100svh] bg-[url('/back.jpg')] bg-cover bg-center text-white ">
     <Header/>
             {/* H1 SEO caché */}
         <h1 className="sr-only">
           Romain Richardon - Développeur Web et Web Mobile
         </h1>
-      <div className='h-[100vh] grid grid-cols-10 grid-rows-12'>
+      <div className='h-[100svh] grid grid-cols-10 grid-rows-12'>
         <div className=' flex col-start-2 row-start-8 xl:row-start-9 row-span-2'>
           <Social/>
         </div>

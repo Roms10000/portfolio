@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
-
-body{
+body {
   color: white;
-  font-family: 'outfit';
+  font-family: "outfit";
 }
 
 html {
@@ -15,7 +14,7 @@ html {
   height: 40%;
   position: relative;
   border-radius: 1.5rem;
-  background-color: rgb(54, 54, 58) ;
+  background-color: rgb(54, 54, 58);
   box-shadow: inset 0px 0px 15px black;
   padding: 2rem;
   overflow: hidden;
@@ -24,20 +23,24 @@ html {
   --spotlight-color: rgb(255, 255, 255);
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .card-spotlight {
     width: 80%;
   }
 }
 
 .card-spotlight::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 80%);
+  background: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    var(--spotlight-color),
+    transparent 80%
+  );
   opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;
@@ -48,10 +51,10 @@ html {
   opacity: 0.6;
 }
 .card-spotlight img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .list {
@@ -77,9 +80,8 @@ html {
 }
 
 .infoList:hover {
-  text-shadow: 0px -2px 0px rgba(0, 0, 0, 1),
-               0 0 5px rgba(255, 255, 255, 0.8),
-               0 -4px 15px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px -2px 0px rgba(0, 0, 0, 1), 0 0 5px rgba(255, 255, 255, 0.8),
+    0 -4px 15px rgba(255, 255, 255, 0.5);
 }
 
 /* Quand on survole un élément, on déplace la barre */
@@ -181,7 +183,7 @@ html {
 
 .logoloop--fade::before,
 .logoloop--fade::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -189,7 +191,6 @@ html {
   pointer-events: none;
   z-index: 1;
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   .logoloop__track {
